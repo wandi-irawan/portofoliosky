@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Backend Developer Portfolio</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme:{
+    extend:{
+      colors:{
+        primary:"#1337ec",
+        backgroundDark:"#101322"
+      },
+      fontFamily:{
+        display:["Manrope"]
+      }
+    }
+  }
+}
+</script>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Manrope',sans-serif;
+}
+
+.blur-nav{
+backdrop-filter: blur(12px);
+}
+
+.tech-item{
+filter:grayscale(100%);
+opacity:.6;
+transition:.3s;
+}
+
+.tech-item:hover{
+filter:grayscale(0);
+opacity:1;
+}
+
+@keyframes float{
+0%{transform:translateY(0px)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0px)}
+}
+
+.float{
+animation:float 5s ease-in-out infinite;
+}
+
+</style>
+
+</head>
+
+<body class="bg-gray-50 dark:bg-backgroundDark text-slate-900 dark:text-white">
+
+<!-- NAVBAR -->
+
+<nav class="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white/70 dark:bg-black/50 blur-nav border-b">
+
+<div class="flex items-center gap-2 font-bold text-lg">
+<span class="material-symbols-outlined text-primary">diamond</span>
+Portfolio
+</div>
+
+<div class="flex gap-6 text-sm font-medium">
+
+<a href="#about" class="hover:text-primary transition">About</a>
+<a href="#projects" class="hover:text-primary transition">Projects</a>
+<a href="#contact" class="hover:text-primary transition">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="text-center py-20 px-6">
+
+<img
+class="mx-auto w-40 h-40 rounded-full shadow-xl border-4 border-white object-cover float"
+src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzdVcXZP6eV9lLQ9CRbK-jNXsmM1bQqcieRAy02Atm9IxaoU1fvSIoKdhK9NP1_68DyZzfo8dhxNW4uxEpVjuPCZhevkLXn4kKOtJM7lAeIiEBIc9yUkxECsF5pK8iGw7I9khV7e1Lrb46BZAvV7p3hg4_04bNFlom3yhldiedlFhl2QQ40rLtLAAg6rlMkOyxbMv43Z1oUN2BMQuMgW-rIFnziJRoQAo4kCTILD4zvz5Lum4wFyxtyjeLSSEyCq052GOzMdegmwE"
+/>
+
+<h1 class="text-4xl font-extrabold mt-6">
+Backend Web Developer
+</h1>
+
+<p class="text-slate-500 mt-4 max-w-md mx-auto">
+Building scalable APIs, backend architectures and high performance systems using modern frameworks.
+</p>
+
+<div class="flex justify-center gap-4 mt-8">
+
+<a href="#projects"
+class="px-6 py-3 bg-primary text-white rounded-full hover:scale-105 transition">
+View Projects
+</a>
+
+<a href="#contact"
+class="px-6 py-3 border rounded-full hover:bg-black hover:text-white transition">
+Contact Me
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="py-20 px-6 bg-white" data-aos="fade-up">
+
+<div class="max-w-4xl mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-6">
+About Me
+</h2>
+
+<p class="text-slate-600 leading-relaxed">
+I am a backend developer specialized in building scalable APIs, authentication systems, and secure server architectures. 
+My focus is writing clean, maintainable code and designing systems that perform efficiently at scale.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- TECH STACK -->
+
+<section class="py-20 px-6" data-aos="fade-up">
+
+<div class="max-w-4xl mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-12">
+Tech Stack
+</h2>
+
+<div class="grid grid-cols-4 gap-10 text-sm">
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">code</span>
+Laravel
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+CodeIgniter
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">database</span>
+MySQL
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">hub</span>
+Docker
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">api</span>
+REST API
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">cloud</span>
+AWS
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">settings_ethernet</span>
+NodeJS
+</div>
+
+<div class="tech-item flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl">security</span>
+Auth
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="py-20 px-6 bg-white">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">
+Projects
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- PROJECT 1 -->
+
+<div data-aos="zoom-in"
+class="bg-gray-50 rounded-xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+<h3 class="font-bold text-lg mb-3">
+E-Commerce API
+</h3>
+
+<p class="text-sm text-slate-600 mb-4">
+REST API for e-commerce platform with authentication, product management, and payment integration.
+</p>
+
+<div class="text-xs text-slate-400 mb-4">
+Laravel • MySQL • JWT
+</div>
+
+<a class="text-primary text-sm font-semibold" href="#">
+View Github
+</a>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+
+<div data-aos="zoom-in"
+class="bg-gray-50 rounded-xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+<h3 class="font-bold text-lg mb-3">
+Task Management API
+</h3>
+
+<p class="text-sm text-slate-600 mb-4">
+Backend system for task management with authentication, roles, and secure REST endpoints.
+</p>
+
+<div class="text-xs text-slate-400 mb-4">
+NodeJS • MongoDB
+</div>
+
+<a class="text-primary text-sm font-semibold" href="#">
+View Github
+</a>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div data-aos="zoom-in"
+class="bg-gray-50 rounded-xl p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+<h3 class="font-bold text-lg mb-3">
+Microservice Order System
+</h3>
+
+<p class="text-sm text-slate-600 mb-4">
+Docker-based microservice architecture for scalable order processing and event-driven communication.
+</p>
+
+<div class="text-xs text-slate-400 mb-4">
+Docker • GraphQL
+</div>
+
+<a class="text-primary text-sm font-semibold" href="#">
+View Github
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-20 px-6" data-aos="fade-up">
+
+<div class="max-w-xl mx-auto text-center">
+
+<h2 class="text-3xl font-bold mb-6">
+Contact Me
+</h2>
+
+<p class="text-slate-600 mb-10">
+If you want to collaborate or hire me for backend development projects feel free to reach out.
+</p>
+
+<div class="flex justify-center gap-6 flex-wrap">
+
+<a href="#" class="px-6 py-3 bg-primary text-white rounded-full hover:scale-105 transition">
+Email
+</a>
+
+<a href="#" class="px-6 py-3 border rounded-full hover:scale-105 transition">
+Github
+</a>
+
+<a href="#" class="px-6 py-3 border rounded-full hover:scale-105 transition">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="text-center py-8 border-t text-sm text-slate-500">
+
+© 2026 Your Name — Built with TailwindCSS
+
+</footer>
+
+
+
+<!-- AOS JS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:800,
+once:true
+});
+
+</script>
+
+
+</body>
+</html>
